@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>MY Page</title>
+    <style>
+li{
+  list-style: none;
+}
+.sns img{
+  float: left;
+  margin-right: 5px;
+  text-align: center;
+}
+.top_menu li{
+  float:left;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 20px
+}
+.top_banner{
+  text-align: center;
+}
+.top_menu a:link,a:visited{
+  text-decoration: none;
+  color:black;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="top_banner">
+      <!--로고-->
+      <h1 class="top_logo">
+        <a href="C:\Users\Owner\Desktop\web\My_first_project.html" class="logo">
+          <span class="logo_img">
+            <img class="logo"alt="로고이미지" rel="95-34" src="http://app-storage-004.cafe24.com/bannermanage2/wjdqnwnd/2019/08/01/65a1c7f938fce0eae9388fee01d87f36.png">
+          </span>
+        </a>
+      </h1>
+    </div>
+  <div>
+    <!--sns아이콘-->
+    <ul class="sns">
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=100002951322903" class="facebook put-facebook"target="_blank">
+          <img src="facebook_logo.png" alt="페이스북로고">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/minsoo_gramm/">
+          <img src="instagram_logo.png" alt="인스타로고">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UCNZ9PlbjGTlAAYle6T74lSw?view_as=subscriber">
+          <img src="youtube_logo.png" alt="유튜브로고">
+        </a>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <br>
+    <div class="top_menu">
+      <ul class="menu_banner">
+        <li><a href="shop.html">
+          Shop
+          </a></li>
+        <li><a href="New.html">
+          New
+          </a></li>
+        <li><a href="Best.html">
+          Best
+          </a></li>
+        <li><a href="Mypage.html">
+          MYpage
+          </a></li>
+      </ul>
+    </div>
+
+
+  </body>
+</html>
