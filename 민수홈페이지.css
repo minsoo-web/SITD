@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 
 /* div {
   border: 1px solid black;
@@ -128,7 +124,7 @@ li {
 }
 
 .logo {
-  width: 1230px;
+  width: 100%;
   height: auto;
   margin: auto;
   text-align: center;
@@ -203,8 +199,8 @@ li {
   height: 670px;
 }
 
-.gallery {
-  
+.new{
+  width: 100% ; 
 }
 
 .gallery-header {
