@@ -104,8 +104,10 @@ nav a#toggle-btn{
         border-bottom: 0;
     }
     nav ul{
+        margin: 0;
         display: none;
         height: auto;
+        padding-inline-start: 0;
     }
     nav li{
         width: 100%;
@@ -151,7 +153,6 @@ nav a#toggle-btn{
     }
     
 }
-
 .section-hero {
     width: 100%;
     height: 100vh;
@@ -166,3 +167,133 @@ nav a#toggle-btn{
 .section-hero h2{
     color: #8D8273;
 }
+
+@media screen and (max-width : 580px){
+    .section-hero h2{
+        font-size: 24px;
+    }
+    .section-hero p{
+        display: none;
+    }
+}
+
+/* overview */
+
+#overview{
+    background : #282627;
+    padding : 8rem 0;
+}
+
+.overview-content{
+    display: grid;
+    grid-gap:80px;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+}
+@media screen and (max-width : 580px){
+    .overview-content{
+        display: grid;
+        grid-gap : 20px;
+        grid-template-columns: repeat(1,1fr);
+        text-align: left;
+    }
+}
+
+/* about section */
+
+#about{
+    padding: 8rem 0;
+}
+
+#about h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size:14px;
+    letter-spacing: 12px;
+    margin-bottom: 2em;
+}
+
+/* features section*/
+
+#features{
+    background:#282627;
+    padding : 8em 0;
+}
+
+.features-content{
+    display: grid;
+    grid-gap:80px;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+}
+@media screen and (max-width : 580px){
+    .features-content{
+        display: grid;
+        grid-gap : 20px;
+        grid-template-columns: repeat(1,1fr);
+        text-align: left;
+    }
+}
+
+/* subscribe section */
+#subscribe {
+    
+    padding : 8em 0;
+}
+#subscribe h2{
+    color : #8D8273;
+}
+#subscribe input{
+    width: 80%;
+    margin: 2em 0 ;
+    background: none;
+    border :1px solid #8D8273;
+    padding : 20px;
+    font-family: 'Roboto condensed';
+    font-weight: 400;
+    color : rgb(211,165,100);
+}
+
+#subscribe input:focus{
+    outline:none;
+    outline:2px solid #8D8273;
+}
+
+input::placeholder{
+    color : #8D8273;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    margin : 0 auto;
+    text-align: center;
+    padding: 1em 0;
+    background: #282627;
+}
+
+footer span{
+    color :#8D8273;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

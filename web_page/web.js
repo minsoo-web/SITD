@@ -4,7 +4,6 @@ $(function(){
     $('#toggle-btn').on('click',function(e){
         e.preventDefault();
         menu.slideToggle();
-    
     });
     $(window).resize(function(){
         var w= $(this).width();
@@ -19,4 +18,18 @@ $(function(){
         }
     });
     $('.open-menu').height($(window).height());
-}); // 안대... 왜 안 대지
+}); 
+
+// //smooth scrolling
+
+// $('a[href*="#"]')
+//     .not('[href="#"]')
+//     .not('[href="#0"]')
+//     .click(function(event){
+//         location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')
+//         &&
+//         location.hostname == this.hostname
+//     }{
+//         var target=$(this.hash);
+//         target = target.length ? target : $('[name=]'+this.hash.slice(1))
+//     })
