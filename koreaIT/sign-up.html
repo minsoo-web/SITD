@@ -34,41 +34,66 @@
       <div id="section">
         <!-- form -->
         <form action="">
-          <div class="form-wrapper">
             <!-- input -->
             <div class="input-wrapper">
-              <div class="id">
+              <div class="input name">
+                <span>이름</span>
+                <div class="join-wrapper">
+                  <input
+                    type="text"
+                    name=""
+                    class="join"
+                    placeholder="Name"
+                  />
+                </div>
+              </div>
+              <div class="input">
                 <span>아이디</span>
-                <input
-                  type="text"
-                  name=""
-                  id="input"
-                  placeholder="ID or e-mail"
-                />
+                <div class="join-wrapper">
+                  <input
+                    type="text"
+                    name=""
+                    class="join"
+                    placeholder="ID or e-mail"
+                  />
+                </div>
               </div>
-              <div class="password">
+              <div class="input">
                 <span>비밀번호</span>
-                <input
-                  type="password"
-                  name=""
-                  id="input"
-                  placeholder="password"
-                />
+                <div class="join-wrapper">
+                  <input
+                    type="password"
+                    name=""
+                    class="join"
+                    placeholder="password"
+                  />
+                </div>
               </div>
-            </div>
+              <div class="input">
+                <span>비밀번호 재확인</span>
+                <div class="join-wrapper">
+                  <input
+                    type="password"
+                    name=""
+                    class="join"
+                    placeholder="password"
+                  />
+                </div>
+              </div>
+              <div class="input">
+                <span>성별</span>
+                <div class="join-wrapper">
+                  <select name="" class="join">
+                    <option value="default">성별</option>
+                    <option value="성별">남</option>
+                    <option value="성별">여</option>
+                  </select>
+                </div>
+              </div>
           </div>
         </form>
-        <!-- 아이디 비번 찾기 section -->
-        <div class="find-section">
-          <label>
-            <input type="checkbox" value="아이디 저장" /> 아이디 저장
-          </label>
-          <ul>
-            <li>아이디를 잊으셨나요? <a href="">아이디 찾기</a></li>
-            <li>비밀번호를 잊으셨나요? <a href="">비밀번호 찾기</a></li>
-          </ul>
-          <div><a href="./sign-up.html">회원가입하기</a></div>
-        </div>
+        <!-- 회원가입 btn -->
+        <button>회원가입</button>
       </div>
     </div>
   </body>
