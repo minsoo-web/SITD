@@ -10,39 +10,7 @@
 a {
   color: black;
 }
-/* nav */
-.nav {
-  width: 100%;
-}
-.nav-wrapper {
-  height: 100px;
-}
-.nav-wrapper > h1 {
-  float: left;
-  margin: auto 20px;
-  line-height: 100px;
-}
-.nav-wrapper > ul {
-  float: right;
-  line-height: 100px;
-}
-.nav-wrapper > ul > li {
-  padding: 0 10px;
-  float: right;
-}
-@media screen and (max-width: 640px) {
-  .nav-wrapper > h1 {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-  }
-  .nav-wrapper > ul {
-    float: none;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-}
+
 /* section */
 #section {
   width: 1000px;
