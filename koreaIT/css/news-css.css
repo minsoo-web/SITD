@@ -61,3 +61,11 @@ article h3 {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  #section {
+    width: 300px;
+    margin: 20px auto 0;
+    padding: 10px;
+  }
+}

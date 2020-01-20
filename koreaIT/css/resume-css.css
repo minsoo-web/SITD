@@ -28,7 +28,19 @@ a {
 #section table td {
   text-align: center;
 }
-
+#section #profile {
+  width: 259px;
+  height: 300px;
+}
+#profile img {
+  width: 100%;
+  height: 100%;
+}
+#section table .name {
+  width: 85px;
+  height: 70px;
+}
+/* 화면 반 분할 */
 @media screen and (max-width: 640px) {
   #section {
     width: 600px;
@@ -40,11 +52,36 @@ a {
     width: 600px;
     font-size: 12px;
   }
-  #profile {
+  #section table td {
+    padding: 5px;
+  }
+  /* table profile */
+  #section #profile {
+    width: 155px;
+    height: 200px;
     padding: 0;
   }
-  #profile img {
-    width: 100%;
-    height: 100%;
+}
+/* 모바일 */
+@media screen and (max-width: 375px) {
+  #section {
+    width: 300px;
+    margin: 20px auto 0;
+    padding: 10px;
+  }
+  #section h1 {
+    font-size: 18px;
+  }
+  /* table */
+  #section table {
+    width: 300px;
+    font-size: 10px;
+  }
+  #section #profile {
+    width: 75px;
+    height: 160px;
+  }
+  #section table .birth {
+    width: 60px;
   }
 }
