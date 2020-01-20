@@ -64,9 +64,34 @@ form {
   width: 100%;
   background-color: #fff;
 }
+
 button {
   width: 400px;
   height: 50px;
   background-color: cadetblue;
   color: #fff;
+}
+@media screen and (max-width: 375px) {
+  #wrap-center {
+    width: 300px;
+    margin: 0 auto;
+  }
+  #wrap-center header {
+    width: 300px;
+  }
+  #wrap-center header h1 {
+    font-size: 2em;
+  }
+  #section {
+    width: 300px;
+  }
+  #section form {
+    width: 300px;
+  }
+  #section form .input-wrapper span {
+    font-size: 12px;
+  }
+  #section button {
+    width: 300px;
+  }
 }
