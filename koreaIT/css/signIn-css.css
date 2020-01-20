@@ -12,15 +12,7 @@ ul {
   list-style: none;
   padding-inline-start: 0;
 }
-/* 가운데 정렬 */
-#wrap-center {
-  width: 1000px;
-  height: 600px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-}
+
 @media screen and (max-width: 640px) {
   #wrap-center {
     position: relative;
@@ -34,7 +26,7 @@ ul {
 /* header */
 header {
   width: 900px;
-  margin: 10px auto;
+  margin: 100px auto 10px;
 }
 header h1 {
   text-align: center;

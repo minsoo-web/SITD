@@ -3,25 +3,17 @@
 }
 a {
   color: black;
+  text-decoration: none;
 }
 ul {
   list-style: none;
   padding-inline-start: 0;
 }
-/* 가운데 정렬 */
-div#wrap-center {
-  width: 1000px;
-  height: 600px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-}
 
 /* header */
 header {
-  width: 900px;
-  margin: 10px auto;
+  width: 600px;
+  margin: 100px auto 20px;
 }
 header h1 {
   text-align: center;
@@ -33,7 +25,7 @@ header h1 {
 
 /* content */
 #section {
-  width: 900px;
+  width: 600px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -41,7 +33,7 @@ header h1 {
   align-items: center;
 }
 form {
-  width: 900px;
+  width: 600px;
   display: flex;
   justify-content: center;
 }
@@ -49,7 +41,7 @@ form {
   margin: 50px auto;
 }
 .input-wrapper {
-  width: 900px;
+  width: 600px;
 }
 .input-wrapper span {
   display: inline-block;

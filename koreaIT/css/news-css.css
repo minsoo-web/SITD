@@ -17,3 +17,47 @@ a {
   margin: 0 auto;
   padding: 0;
 }
+#section h1 {
+  text-align: center;
+  margin: 40px auto;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-wrapper {
+  width: 250px;
+  height: 180px;
+  margin: 20px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+/* article */
+article {
+  padding: 20px;
+}
+article h3 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 640px) {
+  #section {
+    width: 600px;
+    margin: 40px auto 0;
+    padding: 10px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-wrapper {
+    margin: 20px 0;
+  }
+  #section h1 {
+    text-align: center;
+  }
+}
