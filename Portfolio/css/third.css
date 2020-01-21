@@ -1,0 +1,21 @@
+/* third */
+.third {
+  background-color: rgb(240, 240, 230);
+  color: rgb(150, 170, 180);
+  background-image: url(../img/9220_shop1_856363.png);
+  justify-content: space-between;
+  position: relative;
+}
+
+.third .title {
+  margin-top: 20px;
+}
+.third .detail-comment {
+  margin-bottom: 20px;
+}
+
+.absol {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+}

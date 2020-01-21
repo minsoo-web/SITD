@@ -4,6 +4,9 @@ html {
   margin: 0;
   font-family: "Comfortaa", cursive;
 }
+html {
+  font-size: 10px;
+}
 
 ul {
   padding: 0;

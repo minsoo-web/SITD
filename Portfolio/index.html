@@ -9,13 +9,16 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa|Nanum+Gothic&display=swap"
       rel="stylesheet"
     />
+    <!-- 1번째 , 2번째 페이지 / Home, Profile -->
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- 3번째 페이지 / Project -->
+    <link rel="stylesheet" href="./css/third.css" />
+    <!-- 전체 설정 css -->
     <link rel="stylesheet" href="./css/cover.css" />
     <link
       rel="stylesheet"
       href="http://use.fontawesome.com/releases/v5.3.1/css/all.css"
     />
-    <script src="./index.js"></script>
   </head>
   <body>
     <!-- nav -->
@@ -28,7 +31,7 @@
       </ul>
       <div class="hidden menu flex-box">
         <i class="fas fa-bars "></i>
-        <ul class="hidden drop">
+        <ul class="dis-hidden drop">
           <a href="#home"><li>home</li></a>
           <a href="#profile"><li>profile</li></a>
           <a href="#project"><li>project</li></a>
@@ -51,7 +54,7 @@
     <div class="second section flex-col">
       <!-- row 1 -->
       <div class="row1 flex-box">
-        <div class="introduce flex-col">
+        <div class="introduce sub-title flex-col">
           <span>
             I AM
           </span>
@@ -62,14 +65,14 @@
             Developer
           </span>
         </div>
-        <div class="img-wrapper">
+        <div class="img-wrapper sub-title">
           <img
             src="./img/KakaoTalk_Image_2020-01-15-04-12-33.jpeg"
             alt="프사"
           />
         </div>
-        <div class="skills flex-col">
-          <h2>I Can Use</h2>
+        <div class="skills sub-title flex-col">
+          <h1>I Can Use</h1>
           <div class="icon-box flex-box">
             <div class="icon-wrapper">
               <i class="fab fa-html5 fa-3x"></i>
@@ -94,45 +97,90 @@
       </div>
       <!-- row 2 -->
       <div class="row2 flex-box">
-        <div class="detail flex-col">
+        <div class="detail sub-title flex-col">
           <div class="title">
             <h3>profile</h3>
           </div>
-          <span>김민수</span>
-          <span>1995_07_11</span>
-          <span>+82 10-9108-****</span>
-          <span>zlemzlem5656@naver.com</span>
-          <span>zlemzlem5656.dothome.co.kr</span>
+          <div class="hidden">
+            <p>김민수</p>
+            <p>1995_07_11</p>
+            <p>+82 10-9108-****</p>
+            <p>zlemzlem5656@naver.com</p>
+            <p>zlemzlem5656.dothome.co.kr</p>
+          </div>
         </div>
-        <div class="education flex-col">
+
+        <div class="education sub-title flex-col">
           <div class="title">
             <h3>education</h3>
           </div>
-          <span>2022_02 한양대학교 에리카 캠퍼스 졸업(예정)</span>
-          <span>2020_06 KoreaIT 프론트엔드 과정 수료(예정)</span>
-          <span>2014_02 영동고등학교 졸업</span>
-          <span>2011_02 언주중학교 졸업</span>
-        </div>
-        <div class="achievement flex-col">
-          <div class="title">
-            <h3>achivement</h3>
+          <div class="hidden">
+            <p>
+              2022_02 한양대학교 에리카 캠퍼스 졸업(예정)
+            </p>
+            <p>
+              2020_06 KoreaIT 프론트엔드 과정 수료(예정)
+            </p>
+            <p>
+              2014_02 영동고등학교 졸업
+            </p>
+            <p>
+              2011_02 언주중학교 졸업
+            </p>
           </div>
-          <p>
-            그림그리는 실력은 없지만 <br />
-            예쁜 디자인에 관심이 많았던 공학 대학생에서 <br />
-            컴퓨터가 그려주는 UI/UX 에 희열을 느끼며 <br />
-            프론트엔드 개발자의 길에 뛰어들게 되었습니다. <br />
-            밝은 태도와 끈질긴 집중력을 겸비하고 <br />
-            협업과 시간을 중요하게 생각합니다.
-          </p>
+        </div>
+        <div class="achievement sub-title flex-col">
+          <div class="title">
+            <h3>project</h3>
+          </div>
+          <div class="hidden" id="project-wrapper">
+            <p>
+              2019 ~
+            </p>
+            <p>
+              로그인 기능이 있는 투두 플랫폼 페이지 구현<br />
+              리액트를 활용한 프론트 전담
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- third page / project -->
     <a id="project"></a>
-    <div class="third section">
-      <h1>Team Sparkling</h1>
+    <div class="third section flex-col">
+      <div class="absol">
+        <div class="img-wrapper">
+          <img
+            src="./img/스크린샷 2020-01-21 오후 8.18.04.png"
+            alt="구동 화면"
+          />
+        </div>
+      </div>
+      <div class="title">
+        <h1>01. Team Sparkling</h1>
+        <h2>You Know What To Do? <span>2019.12-2020.00</span></h2>
+        <p>
+          sparkling 팀은 가장 작고 기본적인 플랫폼이라 할 수 있는 Todo-List에
+          회원 인증 기능(로그인)과 다른 회원 검색 기능을 추가한 프로토 타입을
+          기획했습니다. 추후로 추가할 기능에 대해서 더 논의 중이며 아직 개발
+          중에 있습니다.
+        </p>
+      </div>
+      <div class="detail-comment">
+        <div class="comment-wrapper">
+          <h2>기여도</h2>
+          <span>리액트 프레임워크를 활용한 프론트부분을 맡았습니다. </span>
+        </div>
+        <div class="comment-wrapper">
+          <h2>기능</h2>
+          <ul>
+            <li>로그인 및 회원가입</li>
+            <li>투두 리스트 등록,삭제 및 추가</li>
+            <li>타 회원의 투두 리스트 열람</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- fourth page / contact -->
@@ -140,5 +188,7 @@
     <div class="fourth section flex-box">
       <h1>Contact Me</h1>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
