@@ -115,10 +115,11 @@ img {
     width: 600px;
   }
 }
-/* 모바일 */
-@media screen and (max-width: 375px) {
+
+/* 갤럭시 */
+@media screen and (max-width: 425px) {
   .section {
-    width: 300px;
+    width: 400px;
   }
   /* header */
   .section h1 {
@@ -133,24 +134,50 @@ img {
   }
   /* 버튼 */
   #size {
-    width: 300px;
+    width: 400px;
+    border: none;
     background-color: #f8f9fa;
+  }
+  .selector button {
+    width: 400px;
+  }
+}
+
+/* i-phone */
+@media screen and (max-width: 375px) {
+  .section {
+    width: 300px;
+  }
+  /* 버튼 */
+  #size {
+    width: 300px;
   }
   .selector button {
     width: 300px;
   }
 }
+
 /* article */
 article {
   width: 1000px;
   margin: 20px auto;
 }
 
+/* desktop 분할 화면 */
 @media screen and (max-width: 640px) {
   article {
     width: 600px;
   }
 }
+
+/* 갤럭시 */
+@media screen and (max-width: 425px) {
+  article {
+    width: 400px;
+  }
+}
+
+/* i-phone */
 @media screen and (max-width: 375px) {
   article {
     width: 300px;

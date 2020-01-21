@@ -12,7 +12,7 @@ ul {
   list-style: none;
   padding-inline-start: 0;
 }
-
+/* desktop 분할화면 */
 @media screen and (max-width: 640px) {
   #wrap-center {
     position: relative;
@@ -23,6 +23,13 @@ ul {
     margin: 20px auto;
   }
 }
+/* 갤럭시 */
+@media screen and (max-width: 425px) {
+  #wrap-center {
+    width: 400px;
+  }
+}
+/* i-phone */
 @media screen and (max-width: 375px) {
   #wrap-center {
     width: 300px;
@@ -40,17 +47,26 @@ header h1 {
   text-transform: uppercase;
   font-family: "Comfortaa", cursive;
 }
+
+/* desktop 분할화면 */
 @media screen and (max-width: 640px) {
   header {
     width: 600px;
   }
 }
-@media screen and (max-width: 375px) {
+/* 갤럭시 */
+@media screen and (max-width: 425px) {
   header {
-    width: 300px;
+    width: 400px;
   }
   header h1 {
     font-size: 2em;
+  }
+}
+/* i-phone */
+@media screen and (max-width: 375px) {
+  header {
+    width: 300px;
   }
 }
 
@@ -99,9 +115,11 @@ input[type="submit"] {
   padding: 10px;
   width: 187px;
 }
-@media screen and (max-width: 375px) {
+
+/* 갤럭시 */
+@media screen and (max-width: 425px) {
   .input-wrapper {
-    width: 300px;
+    width: 400px;
   }
   .id,
   .password {
@@ -112,6 +130,18 @@ input[type="submit"] {
   }
   #input {
     box-sizing: border-box;
+    width: 400px;
+  }
+  input[type="submit"] {
+    width: 400px;
+  }
+}
+/* i-phone */
+@media screen and (max-width: 375px) {
+  .input-wrapper {
+    width: 300px;
+  }
+  #input {
     width: 300px;
   }
   input[type="submit"] {
@@ -146,7 +176,24 @@ input[type="submit"] {
     width: 600px;
   }
 }
-
+@media screen and (max-width: 425px) {
+  #section {
+    width: 400px;
+  }
+  #section form {
+    width: 400px;
+  }
+  #section .find-section {
+    width: 400px;
+  }
+  #section .find-section div {
+    height: 36px;
+    font: 400 11px system-ui;
+  }
+  #section .find-section div a {
+    line-height: 36px;
+  }
+}
 /* 모바일 */
 @media screen and (max-width: 375px) {
   #section {
@@ -157,12 +204,5 @@ input[type="submit"] {
   }
   #section .find-section {
     width: 300px;
-  }
-  #section .find-section div {
-    height: 36px;
-    font: 400 11px system-ui;
-  }
-  #section .find-section div a {
-    line-height: 36px;
   }
 }

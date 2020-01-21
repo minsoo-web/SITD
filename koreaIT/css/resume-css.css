@@ -68,9 +68,7 @@ a {
     width: 300px;
     margin: 20px auto 0;
   }
-  #section h1 {
-    font-size: 18px;
-  }
+
   /* table */
   #section table {
     width: 300px;
@@ -82,5 +80,18 @@ a {
   }
   #section table .birth {
     width: 60px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #section {
+    width: 400px;
+  }
+  #section h1 {
+    font-size: 18px;
+  }
+  /* table */
+  #section table {
+    width: 400px;
   }
 }

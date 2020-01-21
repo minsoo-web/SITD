@@ -42,6 +42,7 @@ article {
 article h3 {
   margin-bottom: 20px;
 }
+/* desktop 분할 화면 */
 @media screen and (max-width: 640px) {
   #section {
     width: 600px;
@@ -61,11 +62,17 @@ article h3 {
     text-align: center;
   }
 }
-
+/* i-phone */
 @media screen and (max-width: 375px) {
   #section {
     width: 300px;
     margin: 20px auto 0;
     padding: 10px;
+  }
+}
+/* 갤럭시 */
+@media screen and (max-width: 425px) {
+  #section {
+    width: 400px;
   }
 }
