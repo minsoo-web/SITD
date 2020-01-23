@@ -96,7 +96,7 @@ img {
   background: #606060;
   border-radius: 5px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .section {
     width: 600px;
   }
@@ -163,8 +163,8 @@ article {
   margin: 20px auto;
 }
 
-/* desktop 분할 화면 */
-@media screen and (max-width: 640px) {
+/* tablet 분할 화면 */
+@media screen and (max-width: 768px) {
   article {
     width: 600px;
   }

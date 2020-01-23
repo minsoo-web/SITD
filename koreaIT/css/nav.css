@@ -19,7 +19,7 @@
   padding: 0 10px;
   float: right;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .nav-wrapper {
     height: 200px;
   }

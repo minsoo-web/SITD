@@ -40,8 +40,8 @@ a {
   width: 85px;
   height: 70px;
 }
-/* 화면 반 분할 */
-@media screen and (max-width: 640px) {
+/* tablet */
+@media screen and (max-width: 768px) {
   #section {
     width: 600px;
     margin: 40px auto;

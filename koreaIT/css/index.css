@@ -28,7 +28,7 @@ ul {
   height: 100%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .header > .img-wrapper {
     height: 354px;
   }
@@ -80,15 +80,13 @@ ul {
   width: 200px;
   margin: 20px auto 0 auto;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .content {
     flex-direction: column;
   }
   .card p {
     font-size: 12px;
   }
-}
-@media screen and (max-width: 640px) {
   .aside {
     display: flex;
     flex-wrap: wrap;

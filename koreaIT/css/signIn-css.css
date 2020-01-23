@@ -12,8 +12,8 @@ ul {
   list-style: none;
   padding-inline-start: 0;
 }
-/* desktop 분할화면 */
-@media screen and (max-width: 640px) {
+/* tablet */
+@media screen and (max-width: 768px) {
   #wrap-center {
     position: relative;
     top: auto;
@@ -48,8 +48,8 @@ header h1 {
   font-family: "Comfortaa", cursive;
 }
 
-/* desktop 분할화면 */
-@media screen and (max-width: 640px) {
+/* tablet */
+@media screen and (max-width: 768px) {
   header {
     width: 600px;
   }
@@ -170,8 +170,8 @@ input[type="submit"] {
 .find-section label {
   cursor: pointer;
 }
-/* 분할 화면 */
-@media screen and (max-width: 640px) {
+/* tablet */
+@media screen and (max-width: 768px) {
   #section {
     width: 600px;
   }
