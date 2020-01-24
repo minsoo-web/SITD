@@ -1,6 +1,8 @@
 .section {
   height: 100vh;
   padding-left: 13%;
+  background-color: ivory;
+  color: rgb(30, 50, 70);
 }
 .flex-box {
   display: flex;
@@ -23,15 +25,26 @@ nav {
   width: 10%;
   min-width: 93px;
   height: 100%;
-  color: #ffffff;
+  color: ivory;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
+nav ul {
+  width: 100%;
+}
 nav ul li {
   margin: 30px 0;
   text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+nav i:hover,
+nav ul li:hover {
+  background-color: rgb(42, 70, 99);
 }
 /* nav mediaQuery */
 @media screen and (max-width: 760px) {
@@ -48,32 +61,38 @@ nav ul li {
   nav .hidden.flex-box {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    transition: all 0.5s linear;
+    width: 100%;
+    align-items: center;
   }
   nav .menu i {
     margin-top: 20px;
+    padding: 10px 0;
     font-size: 1.5em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
   }
   nav .menu:hover .dis-hidden {
     display: block;
     visibility: visible;
   }
+
   nav .menu:hover {
     margin: 0 10px;
   }
 }
 /* first */
 .first {
-  background-color: rgb(240, 240, 230);
   justify-content: center;
   align-items: flex-end;
   letter-spacing: 10px;
-  color: rgb(150, 170, 180);
 }
 /* main-title */
 .first .main-title {
   padding-bottom: 30px;
-  border-bottom: 1px solid rgb(150, 170, 180);
+  border-bottom: 1px solid rgb(30, 50, 70);
   margin-bottom: 30px;
 }
 .first h1 {
@@ -92,10 +111,7 @@ nav ul li {
   }
 }
 /* second */
-.second {
-  background-color: rgb(150, 170, 180);
-  color: rgb(240, 240, 230);
-}
+
 .second .sub-title {
   width: 250px;
   height: 270px;
