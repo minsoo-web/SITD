@@ -7,10 +7,28 @@
     <title>김민수 홈페이지입니다.</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/nav.css" />
+    <!-- slick.js cdn -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- xeicon 폰트 -->
+    <link
+      rel="stylesheet"
+      href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Jua|Noto+Serif+KR&display=swap"
       rel="stylesheet"
     />
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- slick.js cdn -->
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
     <!-- static nav -->
@@ -29,13 +47,32 @@
 
     <!-- header -->
     <!-- 나중에 슬라이드로 구현 -->
-    <div class="header">
+    <div class="header big-slider">
       <div class="img-wrapper">
-        <a href=""
-          ><img src="./image/풀커버사진 복사본.png" alt="배경사진"
-        /></a>
+        <img src="./image/풀커버사진 복사본.png" alt="배경사진" />
+      </div>
+      <div class="img-wrapper">
+        <img src="" alt="슬라이드1" />
+      </div>
+      <div class="img-wrapper">
+        <img src="" alt="슬라이드2" />
+      </div>
+      <div class="img-wrapper">
+        <img src="" alt="슬라이드3" />
       </div>
     </div>
+
+    <script>
+      $(".big-slider").slick({
+        dots: true,
+        fade: true,
+        speed: 1000,
+        cssEase: "linear",
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: false
+      });
+    </script>
 
     <div class="content">
       <div class="gallery">
