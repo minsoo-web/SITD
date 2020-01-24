@@ -13,6 +13,11 @@
       type="text/css"
       href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa|Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
     <!-- xeicon 폰트 -->
     <link
       rel="stylesheet"
@@ -29,6 +34,7 @@
       type="text/javascript"
       src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./jquery.js"></script>
   </head>
   <body>
     <!-- static nav -->
@@ -46,7 +52,7 @@
     </div>
 
     <!-- header -->
-    <!-- 나중에 슬라이드로 구현 -->
+    <!-- big-slider -->
     <div class="header big-slider">
       <div class="img-wrapper">
         <img src="./image/풀커버사진 복사본.png" alt="배경사진" />
@@ -78,110 +84,93 @@
       <div class="gallery">
         <div class="card">
           <div class="img-wrapper">
-            <a href=""
-              ><img src="./image/photo-1577132124566-c58a2f545670.jpeg" alt=""
-            /></a>
+            <img src="./image/photo-1577132124566-c58a2f545670.jpeg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""
-              ><img src="./image/photo-1574392022138-a7d369a6ada3.jpeg" alt=""
-            /></a>
+            <img src="./image/photo-1574392022138-a7d369a6ada3.jpeg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""
-              ><img src="./image/photo-1570737044764-efc7cc50cf2c.jpeg" alt=""
-            /></a>
+            <img src="./image/photo-1570737044764-efc7cc50cf2c.jpeg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""
-              ><img src="./image/photo-1523896719094-5987f9cd958e.jpeg" alt=""
-            /></a>
+            <img src="./image/photo-1523896719094-5987f9cd958e.jpeg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""><img src="./image/img7.jpg" alt=""/></a>
+            <img src="./image/img7.jpg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""><img src="./image/img8.jpg" alt=""/></a>
+            <img src="./image/img8.jpg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""><img src="./image/img9.jpg" alt=""/></a>
+            <img src="./image/img9.jpg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""><img src="./image/img10.jpg" alt=""/></a>
+            <img src="./image/img10.jpg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
         <div class="card">
           <div class="img-wrapper">
-            <a href=""><img src="./image/2020.jpg" alt=""/></a>
+            <img src="./image/2020.jpg" alt="" />
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa
-            eum nihil cum earum, iure excepturi eveniet natus similique labore
-            harum perspiciatis itaque accusantium quisquam dolor quaerat dolores
-            minus doloribus!
-          </p>
+          <div class="card-comment">
+            <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing
+            elit. Eum sequi alias nihil quas adipisci consequuntur nemo quo
+            fugiat omnis architecto minus
+          </div>
         </div>
       </div>
 
