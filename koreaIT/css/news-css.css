@@ -1,23 +1,30 @@
+@font-face {
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   list-style: none;
-  font-family: "Noto Serif KR", serif;
   text-decoration: none;
 }
 a {
   color: black;
 }
 
-/* section */
-#section {
+/* wrap-center */
+#wrap-center {
   width: 1000px;
   margin: 0 auto;
   padding: 0;
+  font-family: "S-CoreDream-2ExtraLight";
 }
-#section h1 {
+#wrap-center h1 {
   text-align: center;
   margin: 40px auto;
 }
@@ -42,9 +49,9 @@ article {
 article h3 {
   margin-bottom: 20px;
 }
-/* tablet */
-@media screen and (max-width: 768px) {
-  #section {
+/* desktop 분할 화면 */
+@media screen and (max-width: 640px) {
+  #wrap-center {
     width: 600px;
     margin: 40px auto 0;
     padding: 10px;
@@ -58,13 +65,13 @@ article h3 {
   .img-wrapper {
     margin: 20px 0;
   }
-  #section h1 {
+  #wrap-center h1 {
     text-align: center;
   }
 }
 /* i-phone */
 @media screen and (max-width: 375px) {
-  #section {
+  #wrap-center {
     width: 300px;
     margin: 20px auto 0;
     padding: 10px;
@@ -72,7 +79,7 @@ article h3 {
 }
 /* 갤럭시 */
 @media screen and (max-width: 425px) {
-  #section {
+  #wrap-center {
     width: 400px;
   }
 }

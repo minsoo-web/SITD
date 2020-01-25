@@ -1,5 +1,12 @@
-* {
-  font-family: "Noto Serif KR", serif;
+@font-face {
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#wrap-center {
+  font-family: "S-CoreDream-2ExtraLight";
 }
 a {
   color: black;
@@ -12,8 +19,8 @@ ul {
   list-style: none;
   padding-inline-start: 0;
 }
-/* tablet */
-@media screen and (max-width: 768px) {
+/* desktop 분할화면 */
+@media screen and (max-width: 640px) {
   #wrap-center {
     position: relative;
     top: auto;
@@ -48,8 +55,8 @@ header h1 {
   font-family: "Comfortaa", cursive;
 }
 
-/* tablet */
-@media screen and (max-width: 768px) {
+/* desktop 분할화면 */
+@media screen and (max-width: 640px) {
   header {
     width: 600px;
   }
@@ -170,8 +177,8 @@ input[type="submit"] {
 .find-section label {
   cursor: pointer;
 }
-/* tablet */
-@media screen and (max-width: 768px) {
+/* 분할 화면 */
+@media screen and (max-width: 640px) {
   #section {
     width: 600px;
   }

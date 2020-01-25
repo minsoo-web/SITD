@@ -1,34 +1,41 @@
+@font-face {
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   list-style: none;
-  font-family: "Noto Serif KR", serif;
   text-decoration: none;
 }
 a {
   color: black;
 }
 
-/* section */
-#section {
+/* wrap-center */
+#wrap-center {
   width: 1000px;
   margin: 40px auto;
   padding: 0;
+  font-family: "S-CoreDream-2ExtraLight";
 }
 /* table */
-#section h1 {
+#wrap-center h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-#section table {
+#wrap-center table {
   width: 1000px;
 }
-#section table td {
+#wrap-center table td {
   text-align: center;
 }
-#section #profile {
+#wrap-center #profile {
   width: 259px;
   height: 300px;
 }
@@ -36,27 +43,27 @@ a {
   width: 100%;
   height: 100%;
 }
-#section table .name {
+#wrap-center table .name {
   width: 85px;
   height: 70px;
 }
-/* tablet */
-@media screen and (max-width: 768px) {
-  #section {
+/* 화면 반 분할 */
+@media screen and (max-width: 640px) {
+  #wrap-center {
     width: 600px;
     margin: 40px auto;
     padding: 0px;
   }
   /* table */
-  #section table {
+  #wrap-center table {
     width: 600px;
     font-size: 12px;
   }
-  #section table td {
+  #wrap-center table td {
     padding: 5px;
   }
   /* table profile */
-  #section #profile {
+  #wrap-center #profile {
     width: 155px;
     height: 200px;
     padding: 0;
@@ -64,34 +71,34 @@ a {
 }
 /* 모바일 */
 @media screen and (max-width: 375px) {
-  #section {
+  #wrap-center {
     width: 300px;
     margin: 20px auto 0;
   }
 
   /* table */
-  #section table {
+  #wrap-center table {
     width: 300px;
     font-size: 10px;
   }
-  #section #profile {
+  #wrap-center #profile {
     width: 75px;
     height: 160px;
   }
-  #section table .birth {
+  #wrap-center table .birth {
     width: 60px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  #section {
+  #wrap-center {
     width: 400px;
   }
-  #section h1 {
+  #wrap-center h1 {
     font-size: 18px;
   }
   /* table */
-  #section table {
+  #wrap-center table {
     width: 400px;
   }
 }

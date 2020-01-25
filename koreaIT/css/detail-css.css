@@ -1,7 +1,15 @@
-.section {
+#wrap-center {
   width: 1000px;
   margin: 40px auto;
   padding: 0;
+  font-family: "S-CoreDream-2ExtraLight";
+}
+@font-face {
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 * {
   margin: 0;
@@ -9,7 +17,6 @@
   box-sizing: border-box;
   outline: none;
   list-style: none;
-  font-family: "Noto Serif KR", serif;
 }
 a {
   color: black;
@@ -96,8 +103,8 @@ img {
   background: #606060;
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) {
-  .section {
+@media screen and (max-width: 640px) {
+  #wrap-center {
     width: 600px;
   }
   .header-content {
@@ -118,14 +125,14 @@ img {
 
 /* 갤럭시 */
 @media screen and (max-width: 425px) {
-  .section {
+  #wrap-center {
     width: 400px;
   }
   /* header */
-  .section h1 {
+  #wrap-center h1 {
     font-size: 17px;
   }
-  .section > a {
+  #wrap-center > a {
     font-size: 10px;
   }
   /* tag */
@@ -145,7 +152,7 @@ img {
 
 /* i-phone */
 @media screen and (max-width: 375px) {
-  .section {
+  #wrap-center {
     width: 300px;
   }
   /* 버튼 */
@@ -163,8 +170,8 @@ article {
   margin: 20px auto;
 }
 
-/* tablet 분할 화면 */
-@media screen and (max-width: 768px) {
+/* desktop 분할 화면 */
+@media screen and (max-width: 640px) {
   article {
     width: 600px;
   }
