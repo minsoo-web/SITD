@@ -49,8 +49,8 @@ article {
 article h3 {
   margin-bottom: 20px;
 }
-/* desktop 분할 화면 */
-@media screen and (max-width: 640px) {
+/* tablet  */
+@media screen and (max-width: 768px) {
   #wrap-center {
     width: 600px;
     margin: 40px auto 0;
