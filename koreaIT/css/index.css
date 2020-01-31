@@ -23,7 +23,7 @@ ul {
 /* header */
 
 .header .img-wrapper {
-  height: 800px;
+  height: 440px;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
@@ -34,7 +34,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .header .img-wrapper {
-    height: 354px;
+    height: 280px;
   }
 }
 
@@ -46,8 +46,7 @@ ul {
   transform: translateY(-50%);
   width: 71px;
   height: 71px;
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: none;
   border: none;
 }
 .big-slider button:focus {
@@ -55,9 +54,10 @@ ul {
 }
 .big-slider button:before {
   font-family: "xeicon";
-  color: #fff;
-  font-size: 20px;
+  color: rgb(165, 175, 185);
+  font-size: 30px;
 }
+
 .slick-prev {
   left: 50px;
   font-size: 0;
