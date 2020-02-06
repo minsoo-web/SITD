@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tourist in Tour</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- xeicon 폰트 -->
+    <link
+      rel="stylesheet"
+      href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <!-- slick.js cdn -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- slick.js cdn -->
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../js/jquery.js"></script>
+  </head>
+  <body>
+    <nav id="nav-box">
+      <div class="wrap-center">
+        <nav class="upper flex-box">
+          <ul class="ul-upper flex-box">
+            <li>
+              <a href=""><span>로그인</span></a>
+            </li>
+            <li>
+              <a href=""><span>회원가입</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="lower flex-box">
+          <div class="img-wrapper logo">
+            <img src="../img/logo.png" alt="" />
+          </div>
+          <ul class="flex-box">
+            <li>
+              <a href=""><span>여행정보</span></a>
+            </li>
+            <li>
+              <a href=""><span>고객센터</span></a>
+            </li>
+            <li>
+              <a href=""><span>상품투어</span></a>
+            </li>
+            <li>
+              <a href=""><span>티켓/가이드</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <aside class="side-nav">
+        <ul class="side-nav-box">
+          <li>
+            <a href=""
+              ><span>전화 문의<br />010-1234-5678</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span>카카오톡<br />1:1 상담</span></a
+            >
+          </li>
+          <li>
+            <a href=""><span>오시는 길</span></a>
+          </li>
+          <li class="color-white">
+            <a href="#top"><span>TOP</span></a>
+          </li>
+        </ul>
+      </aside>
+    </nav>
+
+    <a id="top"></a>
+    <!-- header comment -->
+    <div class="comment">
+      <div class="comment-box">
+        <h1>
+          trust & information
+        </h1>
+        <h4>믿을 수 있는 여행정보, 여행... 어디로 가세요?</h4>
+        <div class="comment-lower">
+          <h4>be tourist for better life</h4>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <!-- big-slider -->
+    <div class="header big-slider">
+      <div class="img-wrapper">
+        <img src="../img/mainslide01.jpg" alt="슬라이드1" />
+      </div>
+      <div class="img-wrapper">
+        <img src="../img/mainslide02.jpg" alt="슬라이드2" />
+      </div>
+      <div class="img-wrapper">
+        <img src="../img/mainslide03.jpg" alt="슬라이드3" />
+      </div>
+    </div>
+
+    <script>
+      $(".big-slider").slick({
+        dots: true,
+        fade: true,
+        speed: 1000,
+        cssEase: "linear",
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: false
+      });
+    </script>
+
+    <section>
+      <h1>다시 찾는 인기 여행지 TOP 3</h1>
+      <div class="brown-section">
+        <div class="gallery wrap-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="" alt="" /></div>
+            <div>
+              <span>성패트릭 대성당</span>
+              <p>
+                바쁜 뉴욕 안에서 정교하면서도 웅장한 기운에 침묵하게 되는 기도의
+                시간!
+              </p>
+              <a href="">view</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-wrapper"><img src="" alt="" /></div>
+            <div>
+              <span>원주 뮤지엄 '산'</span>
+              <p>
+                전시된 유산들을 담아낸 건물에 신비로운 돌과 물의 테마가 담겨
+                있다.
+              </p>
+              <a href="">view</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-wrapper"><img src="" alt="" /></div>
+            <div>
+              <span>일본 만국박람회 기념공원</span>
+              <p>
+                오사카 센리 반파쿠에는 드넓은 대지에 정원과 들, 물과 함께하는
+                문화가 있다.
+              </p>
+              <a href="">view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact flex-box">
+        <div class="flex-box">
+          <div class="flex-box">
+            <img src="" alt="" />
+            <h1>카카오톡 1:1 상담</h1>
+          </div>
+          <div class="flex-box">
+            <img src="" alt="" />
+            <h1>전화 상담 신청</h1>
+          </div>
+        </div>
+        <div class="notice">
+          <h1>Notice</h1>
+          <ul>
+            <li>
+              <a href=""><span>이번 여름 휴가 제주 갈까?</span></a>
+            </li>
+            <li>
+              <a href=""><span>박물관 미션 투어 응모 당첨자 발표</span></a>
+            </li>
+            <li>
+              <a href=""
+                ><span>추석 연휴 티켓/투어 배송 및 직접 수령 안내</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span>하롱베이 서비스 OPEN! (여행정보, 가이드...</span></a
+              >
+            </li>
+            <li>
+              <a href=""><span>투어리스트인투어 서비스 점검 안내</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-box flex-box">
+        <div class="footer-comment">
+          <ul class="flex-box">
+            <li>
+              <a href=""><span>이용약관</span></a>
+            </li>
+            <li>
+              <a href=""><span>개인정보취급방침</span></a>
+            </li>
+          </ul>
+          <p>투어리스트인투어</p>
+          <p>
+            서울특별시 종로구 혜화동 9길 청운빌딩 5층 / 대표전화 02-1234-5678 /
+            E-mail : titour@touristtour.com
+          </p>
+          <p>Copyright(c) TouristTour all right reserved</p>
+        </div>
+        <div class="sns-box">
+          <div class="img-wrapper">
+            <a href=""><img src="" alt=""/></a>
+          </div>
+          <div class="img-wrapper">
+            <a href=""><img src="" alt=""/></a>
+          </div>
+          <div class="img-wrapper">
+            <a href=""><img src="" alt=""/></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
