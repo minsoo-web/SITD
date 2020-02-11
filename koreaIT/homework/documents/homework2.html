@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="msg"></h2>
+    <script>
+      var message = document.getElementById("msg");
+      // 주민등록번호를 입력받은 후 13자리인지 검사
+      var num = 0;
+      function insert() {
+        num = prompt("-를 제외한 주민등록번호를 입력하세요");
+        if (num.length !== 13) {
+          alert("주민등록 번호는 13자리 입니다. 다시 입력해주세요.");
+          insert();
+        }
+        return num;
+      }
+      insert();
+      function jumin(num) {
+        //   입력받은 숫자를 배열화
+        var number = [];
+        var j = 2;
+
+        //   주민등록번호 각 숫자에 2~9, 2~5를 곱합니다.
+        //   마지막 번호는 남깁니다.
+        for (var i = 0; i < 13; i++) {
+          if (i === 12) {
+            number.push(Number(num[i]));
+          } else {
+            number.push(Number(num[i]) * j);
+            j++;
+            if (j === 10) {
+              j = 2;
+            }
+          }
+        }
+        var lastnumber = number[12];
+
+        //   곱한 값을 모두 더합니다.
+        var sum = 0;
+        for (var i = 0; i < number.length - 1; i++) {
+          sum += number[i];
+        }
+
+        //   더한 값을 11로 나눈 나머지 값을 구합니다.
+        //   그리고 그 값에서 11에서 뺍니다.
+        //   뺀 값이 10 이상일 경우 10으로 나눈 나머지 값을 구합니다.
+        var confirmNum = 11 - (sum % 11);
+
+        const confirmOverTen = num => {
+          num >= 10 ? num % 10 : num;
+          return num;
+        };
+
+        var confirmedNum = confirmOverTen(confirmNum);
+
+        if (confirmedNum === lastnumber) {
+          alert("유효한 주민등록번호 입니다.");
+          message.innerHTML = "승인되었습니다.";
+        } else {
+          alert("유효한 주민등록번호가 아닙니다. 다시 입력하세요");
+          var newnumber = insert();
+          jumin(newnumber);
+        }
+      }
+      jumin(num);
+    </script>
+  </body>
+</html>
