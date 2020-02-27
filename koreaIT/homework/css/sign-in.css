@@ -1,0 +1,73 @@
+section#sign-in {
+  width: 550px;
+  margin: 50px auto 0;
+}
+
+.sign-in-header {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.social-login-wrapper {
+  width: 400px;
+  margin: 100px auto;
+}
+.social-login-wrapper li {
+  margin: 5px 0;
+}
+.social-login-wrapper li > a {
+  display: flex;
+  align-items: center;
+}
+
+.social-login-wrapper li:nth-child(1) {
+  background-color: rgb(254, 233, 65);
+  color: black;
+}
+.social-login-wrapper li:nth-child(2) {
+  background-color: rgb(29, 193, 33);
+  color: #ffffff;
+}
+.social-login-wrapper li:nth-child(3) {
+  background-color: rgb(65, 95, 165);
+  color: #ffffff;
+}
+.social-login-wrapper li:nth-child(4) {
+  background-color: rgb(136, 136, 136);
+  color: #ffffff;
+}
+
+.sign-in-check-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 40px auto 0;
+}
+#sigin-check + label {
+  position: relative;
+  width: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: all 0.35s;
+}
+#sigin-check ~ label {
+  cursor: pointer;
+}
+#sigin-check + label > img {
+  position: relative;
+  top: 2px;
+  transition: all 1s;
+}
+#sigin-check {
+  display: none;
+}
+#sigin-check:checked + label {
+  background-color: rgb(65, 95, 165);
+}
+
+#sigin-check:checked + label > img {
+  margin-left: 26px;
+}

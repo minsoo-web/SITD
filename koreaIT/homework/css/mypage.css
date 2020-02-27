@@ -1,0 +1,49 @@
+section#mypage-section {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.mypage-wrapper {
+  position: relative;
+  margin-top: 100px;
+  border-top: 2px solid;
+}
+
+.mypage-wrapper:before {
+  content: "내정보";
+  background-color: black;
+  color: #ffffff;
+  padding: 20px 62px;
+  position: absolute;
+  top: -60px;
+}
+
+.mypage-wrapper li {
+  display: flex;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.mypage-wrapper li > div.profile-info-title {
+  min-width: 125px;
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+
+.mypage-wrapper li > div.profile-info-title + div {
+  padding: 20px;
+}
+.mypage-wrapper li > div.profile-info-title + div input[type="radio"] {
+  margin-right: 10px;
+}
+
+#submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#submit-btn .blue-btn {
+  height: auto;
+  padding: 10px 40px;
+}
