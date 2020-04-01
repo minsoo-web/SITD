@@ -1,3 +1,6 @@
+<?php 
+  include 'is_login.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +21,17 @@
       <div class="nav-wrapper clearfix">
         <h1><a href="./index.html">KoreaIT</a></h1>
         <ul class="right-nav clearfix">
-          <li><a href="./sign-in.html">Sign-In</a></li>
+          <?php 
+            if($is_login){
+              ?>
+              <li><a href="./sign-in.html"><?= $userID ?></a></li>
+          <?php 
+            }else{
+              ?>
+          <li><a href="./sign-in.html">Sign-in</a></li>
+          <?php
+          }
+          ?>
           <li><a href="./detail.html">Detail-Page</a></li>
           <li><a href="./resume.html">Resume</a></li>
           <li><a href="./news.html">Article</a></li>
@@ -26,7 +39,7 @@
         </ul>
       </div>
     </div>
-    
+
     <div id="wrap-center">
       <header>
         <h1>hello!</h1>
@@ -34,7 +47,7 @@
       <!-- content -->
       <div id="section">
         <!-- form -->
-        <form action="">
+        <form action="./sign-in_ok.php" method="POST">
           <div class="form-wrapper">
             <!-- input -->
             <div class="input-wrapper">
@@ -42,7 +55,7 @@
                 <span>아이디</span>
                 <input
                   type="text"
-                  name=""
+                  name="userId"
                   id="input"
                   placeholder="ID or e-mail"
                 />
@@ -51,7 +64,7 @@
                 <span>비밀번호</span>
                 <input
                   type="password"
-                  name=""
+                  name="userPw"
                   id="input"
                   placeholder="password"
                 />
@@ -67,14 +80,8 @@
             <input type="checkbox" value="아이디 저장" /> 아이디 저장
           </label>
           <ul>
-            <li>
-              아이디를 잊으셨나요?
-              <a href="" class="findID underline">아이디 찾기</a>
-            </li>
-            <li>
-              비밀번호를 잊으셨나요?
-              <a href="" class="findPwd underline">비밀번호 찾기</a>
-            </li>
+            <li>아이디를 잊으셨나요? <a href="">아이디 찾기</a></li>
+            <li>비밀번호를 잊으셨나요? <a href="">비밀번호 찾기</a></li>
           </ul>
           <div><a href="./sign-up.html">회원가입하기</a></div>
         </div>
