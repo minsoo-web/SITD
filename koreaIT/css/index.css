@@ -1,29 +1,6 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-@font-face {
-  font-family: "S-CoreDream-2ExtraLight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  margin-inline-start: 0;
-  padding-inline-start: 0;
-}
-
 /* header */
-
 .header .img-wrapper {
-  height: 440px;
+  height: 670px;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
@@ -57,7 +34,6 @@ ul {
   color: rgb(165, 175, 185);
   font-size: 30px;
 }
-
 .slick-prev {
   left: 50px;
   font-size: 0;
@@ -101,18 +77,6 @@ ul {
 }
 .big-slider ul > li button:focus {
   background-color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .slick-arrow {
-    width: 40px;
-    height: 40px;
-  }
-  .slick-prev {
-    left: 20px;
-  }
-  .slick-next {
-    right: 20px;
-  }
 }
 
 /* content */

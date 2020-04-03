@@ -1,24 +1,11 @@
-@font-face {
-  font-family: "S-CoreDream-2ExtraLight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 #wrap-center {
   font-family: "S-CoreDream-2ExtraLight";
 }
-a {
-  color: black;
-  text-decoration: none;
-}
+
 .underline {
   text-decoration: underline;
 }
-ul {
-  list-style: none;
-  padding-inline-start: 0;
-}
+
 /* tablet 분할화면 */
 @media screen and (max-width: 768px) {
   #wrap-center {
@@ -44,8 +31,7 @@ ul {
 }
 /* header */
 header {
-  width: 900px;
-  margin: 100px auto 10px;
+  margin: 100px 0 10px;
 }
 header h1 {
   text-align: center;
@@ -118,7 +104,7 @@ input[type="submit"] {
   padding: 10px;
   cursor: pointer;
 }
-#input {
+.input {
   padding: 10px;
   width: 187px;
 }
@@ -177,7 +163,15 @@ input[type="submit"] {
 .find-section label {
   cursor: pointer;
 }
-/* 분할 화면 */
+
+/*  로그인 했을 경우  */
+#login-ok {
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+/* tablet */
 @media screen and (max-width: 768px) {
   #section {
     width: 600px;

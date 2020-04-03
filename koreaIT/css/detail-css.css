@@ -1,26 +1,8 @@
-#wrap-center {
+#wrapp-center {
   width: 1000px;
   margin: 40px auto;
   padding: 0;
   font-family: "S-CoreDream-2ExtraLight";
-}
-@font-face {
-  font-family: "S-CoreDream-2ExtraLight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  list-style: none;
-}
-a {
-  color: black;
-  text-decoration: none;
 }
 a:visited {
   color: black;
@@ -28,7 +10,7 @@ a:visited {
 #quickLink {
   text-decoration: underline;
 }
-h1 {
+#wrap-center h1 {
   text-align: center;
   padding: 10px;
   margin-bottom: 40px;
@@ -105,7 +87,7 @@ img {
 }
 /* tablet */
 @media screen and (max-width: 768px) {
-  #wrap-center {
+  .section {
     width: 600px;
   }
   .header-content {
@@ -126,14 +108,14 @@ img {
 
 /* 갤럭시 */
 @media screen and (max-width: 425px) {
-  #wrap-center {
+  .section {
     width: 400px;
   }
   /* header */
-  #wrap-center h1 {
+  .section h1 {
     font-size: 17px;
   }
-  #wrap-center > a {
+  .section > a {
     font-size: 10px;
   }
   /* tag */
@@ -153,7 +135,7 @@ img {
 
 /* i-phone */
 @media screen and (max-width: 375px) {
-  #wrap-center {
+  .section {
     width: 300px;
   }
   /* 버튼 */
